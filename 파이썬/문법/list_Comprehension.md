@@ -78,3 +78,49 @@ print(a)
 <p>결과
 [0, 2, 4]
 </p>
+
+
+## 2차원 배열
+예제문제 2563
+
+### 선언하기
+
+```python
+rows = 10 #10행
+cols = 5 #5열
+arr = [[0 for j in range(cols)] for i in range(rows)]
+```
+
+```plaintext
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]]
+```
+
+### 2차원 배열에서 특정 값의 개수 찾기
+
+```python
+# 2차원 배열(리스트)
+matrix = [
+    [1, 2, 3],
+    [4, 1, 6],
+    [7, 8, 1]
+]
+
+# 특정 값
+target = 1
+
+# 리스트 컴프리헨션과 sum 함수를 사용하여 특정 값의 개수를 셈
+count = sum(element == target for row in matrix for element in row)
+
+print(f"{target}의 개수: {count}")
+```
+
+위의 리스트 컴프리헨션 부분은 아래의 for문과 같다.
+
+```python
+for row in matrix:
+    for element in row:
+        if element == target:
+            count += 1
+```
+
+
