@@ -13,6 +13,7 @@
 
 - 딕셔너리 타입은 immutable한 키(key)와 mutable한 값(value)으로 매핑되어 있는 순서가 없는 집합이다.
 - 일반적인 딕셔너리 타입의 모습은 아래와 같이 중괄호 안에 키와 값이 있는 형태이다.
+
 ![alt text](image-5.png)
 
 - 값은 중복될 수 있지만, 키가 중복되면 마지막 값으로 덮어씌워진다.
@@ -20,13 +21,16 @@
 
 #### dictionary 선언
 - 딕셔너리를 선언할 때에는 <code>빈 중괄호("{}")</code>를 사용하거나, 명시적으로 <code>dict()</code>를 사용한다.
+
 ![alt text](image-6.png)
 
 - 명시적인 방법을 사용 시, 아래와 같이 키와 값을 할당하며 선언할 수 있다.
+
 ![alt text](image-7.png)
 
 #### dictionary의 in
 - dictionary에서의 in은 key에 한해서 동작한다.
 - key에 한해서 동작하므로, <b>시간복잡도가 O(1)</b> 이다.
+
 ![alt text](image-8.png)
 
